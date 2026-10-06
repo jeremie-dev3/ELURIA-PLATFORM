@@ -1,0 +1,12 @@
+.vercel/
+.next/
+/out/
+/build/
+node_modules/
+.npm-cache/
+.tmp/
+*.tsbuildinfo
+.env*
+!.env.example
+desktop.ini
+.DS_Store

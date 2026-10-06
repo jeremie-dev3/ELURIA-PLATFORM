@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+	--color-brand-navy: #071b73;
+	--color-brand-gold: #8d7000;
+	--color-canvas: #f3f6fa;
+}
+
+:root {
+	color-scheme: light;
+}
+
+body {
+	background: var(--color-canvas);
+	color: #0f172a;
+}
+
+::selection {
+	background: #eadca8;
+	color: #071b73;
+}
