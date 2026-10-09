@@ -1,3 +1,4 @@
+
 # Eluria Investor Relations Prototype
 
 A responsive investor-relations dashboard prototype built with Next.js App Router. The app currently uses mock dashboard data and browser-local storage; it is not a shared CRM or production identity system.
