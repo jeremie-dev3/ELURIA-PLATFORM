@@ -7,6 +7,7 @@ export default function LoginPage() {
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -19,7 +20,7 @@ export default function LoginPage() {
       const response = await fetch('/api/demo-login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password, rememberMe }),
       });
       const result = await response.json();
 
@@ -41,10 +42,13 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-canvas px-4 py-10 text-slate-900">
-      <section className="w-full max-w-md rounded-lg border border-slate-200 bg-white p-7 shadow-sm sm:p-9">
-        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-brand-navy">Eluria Investor Relations</p>
-        <h1 className="mt-3 text-2xl font-bold">Sign in</h1>
+    <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,_#f5f0d8_0%,_#eef3fb_30%,_#edf3fb_100%)] px-4 py-10 text-slate-900">
+      <section className="w-full max-w-md rounded-xl border border-[#d4af37]/30 bg-white p-7 shadow-[0_18px_60px_rgba(7,27,115,0.12)] sm:p-9">
+        <div className="mb-5 flex items-center justify-center rounded-xl bg-[#071b73] p-3 shadow-sm">
+          <img src="/brand/ELURIA%20GROUP%20LTD%20LOGO.png" alt="Eluria Group Ltd" className="h-12 w-auto object-contain" />
+        </div>
+        <p className="text-center text-xs font-semibold uppercase tracking-[0.12em] text-brand-navy">Eluria Investor Relations</p>
+        <h1 className="mt-3 text-2xl font-bold text-[#071b73]">Sign in</h1>
         <p className="mt-2 text-sm text-slate-500">Enter your demo administrator credentials to continue.</p>
 
         <form onSubmit={handleSubmit} className="mt-7 space-y-5">
@@ -73,6 +77,16 @@ export default function LoginPage() {
               className="mt-1.5 h-10 w-full rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-brand-navy focus:ring-2 focus:ring-brand-navy/15"
             />
           </div>
+
+          <label className="flex items-center gap-2 text-sm text-slate-600">
+            <input
+              type="checkbox"
+              checked={rememberMe}
+              onChange={(event) => setRememberMe(event.target.checked)}
+              className="h-4 w-4 rounded border-slate-300 accent-[#071b73]"
+            />
+            Remember me on this device
+          </label>
 
           {error && <p role="alert" className="text-sm text-rose-700">{error}</p>}
 

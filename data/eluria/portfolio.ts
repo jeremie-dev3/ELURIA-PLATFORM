@@ -1,0 +1,43 @@
+import type { ProjectPortfolioItem } from '../../types/eluria/portfolio';
+
+export const ELURIA_PORTFOLIO: ProjectPortfolioItem[] = [
+  {
+    id: 'agape-water-treatment',
+    slug: 'agape-water-treatment-facility',
+    name: 'Agape Water Treatment Facility',
+    category: 'Water & Infrastructure',
+    location: 'Ghana',
+    shortDescription: 'Industrial and commercial water purification and distribution infrastructure.',
+    fullDescription: 'A planned treatment and distribution facility designed to serve industrial and commercial users with dependable water quality, efficient operations, and opportunities for responsible reuse.',
+    technicalInfo: ['Treatment process selection based on source-water characterization', 'Modular plant configuration for phased capacity growth', 'Monitoring and control systems planned for consistent output quality', 'Reuse and residuals management incorporated into the operating concept'],
+    projectImage: '/media/water-treatment/20260509_132922%202.jpg',
+    status: 'In development',
+    relatedOpportunities: ['agape-water-treatment'],
+  },
+  {
+    id: 'ce-grains-commercial-infrastructure',
+    slug: 'ce-grains-commercial-infrastructure',
+    name: 'CE Grains Commercial Infrastructure',
+    category: 'Agribusiness & Processing',
+    location: 'Ghana',
+    shortDescription: 'Commercial grain storage, value-addition, and regional distribution infrastructure.',
+    fullDescription: 'A proposed integrated grain hub combining storage, handling, processing, and logistics to improve market access and reduce post-harvest losses across regional supply chains.',
+    technicalInfo: ['Phased storage and handling capacity', 'Quality control and traceability workflow', 'Value-addition and processing infrastructure', 'Distribution planning for domestic and regional markets'],
+    projectImage: '/media/water-treatment/20260509_132927%201%20(1).jpg',
+    status: 'In development',
+    relatedOpportunities: ['ce-grains-commercial-infrastructure'],
+  },
+  {
+    id: 'tema-clean-energy-grid',
+    slug: 'tema-clean-energy-grid',
+    name: 'Tema Clean Energy Grid',
+    category: 'Energy & Utilities',
+    location: 'Tema, Ghana',
+    shortDescription: 'A clean-energy and grid-resilience concept for industrial and commercial demand.',
+    fullDescription: 'A clean-energy infrastructure concept focused on supporting reliable power for industrial and commercial users through staged generation, grid integration, and operational resilience measures.',
+    technicalInfo: ['Grid integration and load studies planned', 'Renewable generation and storage options under evaluation', 'Phased delivery aligned to demand growth', 'Environmental and social considerations integrated in planning'],
+    projectImage: '/media/water-treatment/20260509_132922%202.jpg',
+    status: 'Under assessment',
+    relatedOpportunities: ['tema-clean-energy-grid'],
+  },
+];

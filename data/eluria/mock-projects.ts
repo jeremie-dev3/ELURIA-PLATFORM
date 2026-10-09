@@ -11,7 +11,7 @@ export const ELURIA_PROJECTS: ProjectOpportunity[] = [
     targetRaise: '$2.5M',
     expectedReturns: '18% IRR',
     durationMonths: 36,
-    imageUrl: '/media/water-treatment/photo-1.jpg',
+    imageUrl: '/media/water-treatment/20260509_132922%202.jpg',
     status: 'Seeking Investment',
     isConfidential: true,
   },
@@ -24,7 +24,7 @@ export const ELURIA_PROJECTS: ProjectOpportunity[] = [
     targetRaise: '$1.8M',
     expectedReturns: '21% IRR',
     durationMonths: 24,
-    imageUrl: '/media/water-treatment/photo-2.jpg',
+    imageUrl: '/media/water-treatment/20260509_132927%201%20(1).jpg',
     status: 'Seeking Investment',
     isConfidential: true,
   }

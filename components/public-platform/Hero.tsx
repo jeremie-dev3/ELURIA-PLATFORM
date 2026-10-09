@@ -1,6 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
 
-export function Hero() {
+interface HeroProps {
+  onBecomeInvestor?: () => void;
+}
+
+export function Hero({ onBecomeInvestor }: HeroProps) {
   return (
     <section className="border-b border-slate-800 bg-slate-950 py-20 text-white">
       <div className="mx-auto max-w-7xl px-6">
@@ -13,6 +18,25 @@ export function Hero() {
         <p className="mt-4 max-w-2xl text-base text-slate-400">
           A secure digital platform designed to attract, qualify, and engage investors—turning interest into investment conversations.
         </p>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Link href="/invest" className="rounded-lg bg-amber-500 px-5 py-3 text-xs font-bold text-slate-950 transition hover:bg-amber-400">
+            Explore Opportunities
+          </Link>
+          <button
+            type="button"
+            onClick={onBecomeInvestor}
+            className="rounded-lg bg-amber-500 px-5 py-3 text-xs font-bold text-slate-950 transition hover:bg-amber-400"
+          >
+            Become an Investor
+          </button>
+          <Link href="/contact#consultation" className="rounded-lg border border-slate-700 px-5 py-3 text-xs font-bold text-slate-200 transition hover:border-amber-400 hover:text-white">
+            Book a Consultation
+          </Link>
+          <Link href="/contact" className="px-3 py-3 text-xs font-semibold text-slate-300 transition hover:text-white">
+            Contact Eluria
+          </Link>
+        </div>
       </div>
     </section>
   );

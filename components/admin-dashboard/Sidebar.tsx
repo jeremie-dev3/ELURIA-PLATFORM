@@ -19,14 +19,14 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { label: 'Dashboard', href: '/invest', icon: LayoutDashboard, section: 'dashboard' },
+  { label: 'Dashboard', href: '/admin/dashboard', icon: LayoutDashboard, section: 'dashboard' },
   { label: 'Opportunities', href: '/invest/opportunities', icon: BriefcaseBusiness, section: 'opportunities' },
-  { label: 'Investors', href: '/invest#investors', icon: UsersRound, section: 'investors' },
-  { label: 'Meetings', href: '/invest#meeting-stage', icon: CalendarDays, section: 'meetings' },
-  { label: 'NDAs', href: '/invest#nda-stage', icon: FileCheck2, section: 'ndas' },
-  { label: 'Updates', href: '/invest#recent-activity', icon: Activity, section: 'updates' },
-  { label: 'Reports', href: '/invest#reports', icon: BarChart3, section: 'reports' },
-  { label: 'Settings', href: '/invest#dashboard', icon: Settings2, section: 'settings' },
+  { label: 'Investors', href: '/admin/dashboard#investors', icon: UsersRound, section: 'investors' },
+  { label: 'Meetings', href: '/admin/dashboard#meeting-stage', icon: CalendarDays, section: 'meetings' },
+  { label: 'NDAs', href: '/admin/dashboard#nda-stage', icon: FileCheck2, section: 'ndas' },
+  { label: 'Updates', href: '/admin/dashboard#recent-activity', icon: Activity, section: 'updates' },
+  { label: 'Reports', href: '/admin/dashboard#reports', icon: BarChart3, section: 'reports' },
+  { label: 'Settings', href: '/admin/dashboard#dashboard', icon: Settings2, section: 'settings' },
 ];
 
 interface SidebarProps {
